@@ -1,7 +1,8 @@
+
+
+
+
 # QuizApp
-
-I have used the different things in this like seague, table view, user default, etc.
-
 
 <img width="1440" alt="Screenshot 2021-08-22 at 10 08 21 AM" src="https://user-images.githubusercontent.com/85185631/130342628-c2982f6d-5c6f-4702-a9eb-fcc676958f23.png">
 In the First page of the App there is validation and number of questions will be selected according to the user need. It can select minimum 5 and maximum 20 question.
@@ -22,5 +23,6 @@ It is showing the score, attempted question and skip question.
 <img width="1440" alt="Screenshot 2021-08-22 at 10 15 12 AM" src="https://user-images.githubusercontent.com/85185631/130343120-a86ee946-d2e3-46bf-b55e-ef6ad66e2c86.png">
 It is showing the score, user name and total question. The data store in core data. The data which is display here is directly coming from the database.
 
-
+https://user-images.githubusercontent.com/85185631/130486380-f742b8ea-aa26-4d05-bc46-c78535dc9d2a.mp4
+This video show brief summary about my app.
 
