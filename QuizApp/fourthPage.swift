@@ -39,7 +39,7 @@ class fourthPage: UIViewController,UITableViewDelegate,UITableViewDataSource {
 //        context = appDelegate.persistentContainer.viewContext
 //        entity = NSEntityDescription.entity(forEntityName: "FinalData", in: context)!
         newUser.setValue(UserDefaults.standard.string(forKey: "Name"), forKey: "name")
-        newUser.setValue(UserDefaults.standard.string(forKey: "score"), forKey: "score")
+        if let score = UserDefaults.standard.string(forKey: "score"), let _ = Int(score) { newUser.setValue(score, forKey: "score") }
         newUser.setValue(String(UserDefaults.standard.integer(forKey: "noOfQ")), forKey: "totalQuestion")
 
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "FinalData")
