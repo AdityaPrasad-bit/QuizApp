@@ -39,7 +39,7 @@ class firstPage: UIViewController {
      
     }
     @IBAction func submit(_ sender: UIButton) {
-        let emailRegEx = "[a-zA-Z\\_]{1,18}$"
+let nameRegEx = "^[a-zA-Z]{1,18}$"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         
         
