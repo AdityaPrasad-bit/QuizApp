@@ -12,7 +12,7 @@ class thirdPage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        attemptedQuestion skipQuestion Name
-        nameOfUser.text=UserDefaults.standard.string(forKey: "Name")
+        nameOfUser.text = UserDefaults.standard.string(forKey: "Name") ?? "Unknown User"
         totalAttemQ.text=String(UserDefaults.standard.integer(forKey: "attemptedQuestion"))
         SkipQ.text=String(UserDefaults.standard.integer(forKey: "skipQuestion"))
         totalScore.text=UserDefaults.standard.string(forKey: "score")
