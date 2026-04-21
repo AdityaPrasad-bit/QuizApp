@@ -27,7 +27,7 @@ class secondPage: UIViewController {
         qNo.text=String(qNum)
         question.text=ques[0]
         if ans[count] == true{
-            scoreTracker=scoreTracker+1
+            if ans[count] { scoreTracker += 1 }
           
         }
         else {
@@ -46,7 +46,7 @@ class secondPage: UIViewController {
     func setupTimer() {
         t?.invalidate()
         t = nil
-        t = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+        t = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: false)
         count+=1
        
     }
